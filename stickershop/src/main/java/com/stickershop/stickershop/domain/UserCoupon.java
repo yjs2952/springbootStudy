@@ -21,7 +21,7 @@ public class UserCoupon {
     @Column(columnDefinition = "int default 0")
     private int useCheck;
 
-    @ManyToOne
+    /*@ManyToOne
     @JoinColumn(name = "orderinfo_id")
-    private Order order;
+    private Order order;*/
 }

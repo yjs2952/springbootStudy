@@ -20,10 +20,10 @@ public class Order {
     private Shipping shipping;
 
     @OneToOne
-    @JoinColumn(name = "oder_status_id")
+    @JoinColumn(name = "order_status_id")
     private OrderStatus orderStatus;
 
-    @OneToMany(fetch = FetchType.LAZY, orphanRemoval = true)
-    @JoinColumn(name = "user_coupon_id")
+    @OneToMany(orphanRemoval = true)
+    @JoinColumn(name = "order_id")
     private List<UserCoupon> userCouponList;
 }
